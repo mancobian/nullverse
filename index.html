@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Red Fork Empire</title>
+
+<!-- BLUEPRINT CSS -->
+<link rel="stylesheet" href="styles/blueprint/screen.css" type="text/css" media="screen, projection"/>
+<link rel="stylesheet" href="styles/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection"/>
+<link rel="stylesheet" href="styles/blueprint/print.css" type="text/css" media="print"/>
+<!--[if lt IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"/><![endif]-->
+
+<!-- GLMATRIX -->
+<script type="application/javascript" src="scripts/glmatrix/glMatrix.js"></script>
+
+<!-- WEBGL INSPECTOR -->
+<!-- script type="text/javascript">
+    var gliEmbedDebug = true;
+</script>
+<script type="application/javascript" src="scripts/webgl/inspector/core/embed.js" ></script -->
+
+<!-- C3DL -->
+<!-- script type="application/javascript" src="c3dl/c3dapi.js" ></script -->
+<!-- script type="application/javascript" src="scripts/c3dl-tutorial.js" ></script-->
+
+<!-- JQUERY -->
+<link type="text/css" href="scripts/jquery/css/humanity/jquery-ui-1.8.11.custom.css" rel="Stylesheet" />  
+<script type="text/javascript" src="scripts/jquery/js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="scripts/jquery/js/jquery-ui-1.8.11.custom.min.js"></script>
+
+<!-- JSON2 -->
+<script type="text/javascript" src="scripts/json/json2.js"></script>
+
+<!-- PROCESSING.JS -->
+<script type="application/javascript" src="scripts/processing/processing-1.1.0.js"></script>
+
+<!-- GOOGLE WEB FONT API -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin" />
+
+<!-- CUSTOM -->
+<link rel="stylesheet" href="styles/theme.css" type="text/css" media="screen, projection" />
+<script type="application/javascript" src="scripts/prototype.js"></script>
+<script type="application/javascript" src="scripts/delegate.js"></script>
+<script type="application/javascript" src="scripts/ui.js"></script>
+</head>
+
+<body>
+<img id="background-image" src="images/dj_parchment.jpg" />
+<canvas id="map-canvas" data-processing-sources="scripts/canvas.pde scripts/input.pde scripts/camera.pde scripts/orbit.pde scripts/planet.pde scripts/universe.pde scripts/ui.pde scripts/app.pde scripts/main.pde"></canvas>
+<div id="settings" class="ui-state-highlight ui-corner-all settings-sections">
+  <h1 class="ui-widget-header ui-corner-top">Project: Nullverse</h1>
+  <h2 id="map-settings-header" class="settings-header"><a href="#">Map</a></h2>
+  <div id="map-settings" class="settings-section">
+    <div class="settings-item">
+      <div id="map-settings-population" class="settings-label">Population</div>
+      <input id="map-settings-population-value" class="settings-value settings-input-ro" disabled="disabled" />
+      <div id="map-settings-population-slider" class="settings-slider"></div>
+    </div>
+  </div>
+  <h2 id="camera-settings-header" class="settings-header"><a href="#">Camera</a></h2>
+  <div id="camera-settings" class="settings-section">
+    <div class="settings-item">
+      <div id="camera-settings-xpos-label" class="settings-label">Position (x)</div>
+      <input id="camera-settings-xpos-value" class="settings-value settings-input-ro" disabled="disabled" />
+      <div id="camera-settings-xpos-slider" class="settings-slider"></div>
+    </div>
+    <div class="settings-item">
+      <div id="camera-settings-ypos-label" class="settings-label">Position (y)</div>
+      <input id="camera-settings-ypos-value" class="settings-value settings-input-ro" disabled="disabled" />
+      <div id="camera-settings-ypos-slider" class="settings-slider"></div>
+    </div>
+    <div class="settings-item">
+      <div id="camera-settings-zpos-label" class="settings-label">Position (z)</div>
+      <input id="camera-settings-zpos-value" class="settings-value settings-input-ro" disabled="disabled" />
+      <div id="camera-settings-zpos-slider" class="settings-slider"></div>
+    </div>
+    <div class="settings-item">
+      <div id="camera-settings-fov-label" class="settings-label">FOV</div>
+      <input id="camera-settings-fov-value" class="settings-value settings-input-ro" disabled="disabled" />
+      <div id="camera-settings-fov-slider" class="settings-slider"></div>
+    </div>
+    <div class="settings-item">
+      <div id="camera-settings-clip-label" class="settings-label">Clip Planes</div>
+      <input id="camera-settings-clip-value" class="settings-value settings-input-ro" disabled="disabled" />
+      <div id="camera-settings-clip-slider" class="settings-slider"></div>
+    </div>
+  </div>
+  <h2 id="view-settings-header" class="settings-header"><a href="#">View</a></h2>
+  <div id="view-settings" class="settings-section">
+    <div id="view-settings-controls" class="settings-item">
+      <div id="view-settings-buttonset" class="view-settings-radio" >
+          <input type="radio" name="radio" id="view-settings-buttonset-pan" />
+          <label class="view-settings-buttonset-label" for="view-settings-buttonset-pan">Pan</label>
+          <input type="radio" name="radio" id="view-settings-buttonset-rotate" checked="checked" />
+          <label class="view-settings-buttonset-label" for="view-settings-buttonset-rotate">Rotate</label>
+          <input type="radio" name="radio" id="view-settings-buttonset-zoom" />
+          <label class="view-settings-buttonset-label" for="view-settings-buttonset-zoom">Zoom</label> 
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

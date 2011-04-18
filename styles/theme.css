@@ -1,0 +1,157 @@
+/* @IMPORT
+=============================================================================*/
+/* @GLOBAL
+=============================================================================*/
+
+body 
+{ 
+  background-color: black; 
+  font-family: "EB Garamond", garamond, georgia, serif; 
+  font-size: 1.0em; 
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* @LAYOUT
+=============================================================================*/
+
+#background-image
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/*
+@note By default canvas, unlike div, is display: inline; 
+  so it gets set to vertical-align: baseline. Remove the "extra"
+  bottom margin by setting vertical-align: top.
+@ref http://stackoverflow.com/questions/4785360/how-can-i-remove-the-extra-height-of-html5-canvas
+*/
+
+#map-canvas
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.clearhack
+{
+  display: block;
+  clear: both;
+}
+
+#settings
+{
+  font-family: "EB Garamond", garamond, georgia, serif; 
+  font-size: 1.0em; 
+}
+
+#settings > h1
+{
+  padding: 0.25em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.settings-sections
+{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 25%;
+  padding: 1em;
+  font-size: 1.0em;
+} 
+
+.settings-section,
+.settings-item
+{
+  display: block;
+  font-size: 0.9em;
+} 
+
+.settings-item
+{
+  margin-bottom: 1em;
+}
+
+.settings-header
+{
+  font-size: 1em;
+}
+
+.settings-label
+{
+  float: left;
+  font-weight: bold;
+}
+
+.settings-value
+{
+  float: right;
+  text-align: right;
+}
+
+.settings-slider
+{
+  display: block;
+  clear: both;
+  font-size: 0.5em;
+}
+
+.settings-input-ro
+{
+  background-color: transparent;
+  border:0;
+  color:#000;
+  vertical-align: top;
+}
+
+.view-settings-radio
+{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.view-settings-buttonset-label
+{
+  font-family: "EB Garamond", garamond, georgia, serif !important; 
+  font-size: 1.2em !important;
+  text-align: right !important;
+}
+
+#view-settings-controls
+{
+  margin-bottom: 0em !important;
+}
+
+/* @TYPOGRAPHY
+=============================================================================*/
+/* @LINK
+=============================================================================*/
+/* @LIST
+=============================================================================*/
+/* @FORM
+=============================================================================*/
+/* @TABLE
+=============================================================================*/
+/* @MISCELLANEOUS
+=============================================================================*/
+
+/* Override jQuery UI icon class */
+.ui-icon
+{
+  display: inline-block !important;
+}
+
